@@ -1,0 +1,192 @@
+﻿@using Microsoft.Win32;
+<style>
+    *{
+        box-sizing:border-box;
+        overflow: hidden;
+    }
+
+   .container{
+       width:100%;
+       display:flex;
+       flex-direction:row;
+       box-sizing:border-box;
+       background-color: #e6eced;
+   }
+
+   .container_left{
+       width:15%;
+       height:100vh;
+       background-color:aliceblue;
+       display:flex;
+       flex-direction:column;
+       box-sizing: border-box;
+        
+    }
+
+   .container_left_bottom{
+       width:100%;
+       display:flex;
+       flex-direction:column;
+       height:100%;
+       justify-content:end;
+       align-items:center;
+   }
+
+    .btn_main{
+        background-color: #326fa8;
+    }
+    
+   .btn_info{
+        background-color: #326fa8
+   }
+
+    .btn_setting{
+        background-color: #326fa8;
+    }
+    .btn_close{
+        background-color:red;
+    }
+
+    .btn_download{
+        background-color:green;
+    }
+
+    ul{
+        width:100%;
+    }
+
+   li{
+       border:0px solid black;
+       height:50px;
+       line-height:50px;
+       text-align:center;
+       border-radius:5px;
+       margin-bottom:3px;
+       color:white;
+   }
+
+   li:hover{
+       box-shadow:5px 5px 5px gray;
+       cursor:pointer;
+    }
+
+    .in-line{
+        display:flex;
+        width:800px;
+        padding:4px;
+        padding-left:20px;
+        justify-content:center;
+        align-items:center;
+        margin:0 auto;
+        background-color: #edfaf1;
+        border-radius: 50px;
+        border: 1px solid #edfaf1;
+    }
+
+    input{
+        width:100%;
+        height:54px;
+        background:none;
+        border:0;
+        padding:0;
+        outline:none;
+    }
+
+    button{
+        height: 54px;
+        width: 130px;
+        background-color: #0acc46;
+        color: #ffffff;
+        text-transform:uppercase;
+        border-style:none;
+        border-radius:50px;
+        cursor:pointer;
+        outline:none;
+        font-weight:bold;
+    }
+
+    .container_right {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        margin: 10px;
+    }
+  
+</style>
+
+<div class="container">
+    <div class="container_left">
+        <ul style="list-style-type:none">
+            <li class="btn_main" @onclick="btnMain_Click">메인메뉴</li>
+        </ul>
+        
+        <div class="container_left_bottom">
+            <ul>
+               <li class="btn_download" @onclick="btndownload_Click">양식 다운로드</li>
+                <li class="btn_info" @onclick="btnInfo_Click">정보</li>
+                <li class="btn_setting" @onclick="btnSetting_Click">설정</li>
+                <li class="btn_close"@onclick="btnClose_Click" >종료</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container_right">
+        @switch (page)
+        {
+            case 0:
+                <MainComponent></MainComponent>
+                break;
+            case 1:
+                <InfoComponent></InfoComponent>
+                break;
+            case 2:
+                <SettingComponent></SettingComponent>
+                break;
+            case 3:
+                Console.WriteLine("종료");
+                break;
+        }
+    </div>
+
+</div>
+
+@code{
+    public int page = 0;
+
+    private async Task btnMain_Click()
+    {
+        page = 0;
+    }
+
+    private async Task btnInfo_Click()
+    {
+        //Console.WriteLine("정보 버튼 클릭");
+        page = 1;
+    }
+
+    private async Task btnSetting_Click()
+    {
+        page = 2;
+    }
+
+    private async Task btnClose_Click()
+    {
+        page = 3;
+    }
+
+    private async Task btndownload_Click()
+    {
+        SaveFileDialog savefile = new SaveFileDialog();
+        savefile.Filter = "xlsx files|*.xlsx";
+
+        if(savefile.ShowDialog() == true) // 파일 열기(OK) 버튼을 누른경우
+        {
+            string fname = savefile.FileName;
+            // 새 통합 문서를 만든다.
+            
+
+        }
+    }
+}
+
+

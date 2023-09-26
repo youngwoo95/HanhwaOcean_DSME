@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "RMnd6eat7NiyiL3t+OgZ/BTKFVejILBXrtfLxZ0SlNo=",
+  "Source": "DSME_HanhwaOcean",
+  "BasePath": "/",
+  "Mode": "Root",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DSME_HanhwaOcean\\wwwroot",
+      "Source": "DSME_HanhwaOcean",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\DSME_HanhwaOcean\\DSME_HanhwaOcean\\wwwroot\\",
+      "BasePath": "/",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\DSME_HanhwaOcean\\DSME_HanhwaOcean\\wwwroot\\css\\app.css",
+      "SourceId": "DSME_HanhwaOcean",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\DSME_HanhwaOcean\\DSME_HanhwaOcean\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/app.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\DSME_HanhwaOcean\\DSME_HanhwaOcean\\wwwroot\\index.html",
+      "SourceId": "DSME_HanhwaOcean",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\DSME_HanhwaOcean\\DSME_HanhwaOcean\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\DSME_HanhwaOcean\\DSME_HanhwaOcean\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\DSME_HanhwaOcean\\DSME_HanhwaOcean\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-windows\\staticwebassets\\msbuild.DSME_HanhwaOcean.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-windows\\staticwebassets\\msbuild.build.DSME_HanhwaOcean.props",
+      "PackagePath": "build\\DSME_HanhwaOcean.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-windows\\staticwebassets\\msbuild.buildMultiTargeting.DSME_HanhwaOcean.props",
+      "PackagePath": "buildMultiTargeting\\DSME_HanhwaOcean.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-windows\\staticwebassets\\msbuild.buildTransitive.DSME_HanhwaOcean.props",
+      "PackagePath": "buildTransitive\\DSME_HanhwaOcean.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
